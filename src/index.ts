@@ -1,5 +1,6 @@
 import express from 'express';
 import Ping from './ping'
+import query from './db'
 
 const app = express();
 const PORT = 8000;
