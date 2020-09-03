@@ -21,9 +21,11 @@ Route | Method | Query String | Body | Description
 
 First you need an access to a PostgreSQL database.
 with the createdb utility : 
+
     createdb cresh-tt-back
 
 Once the **cresh-tt-back** database is created, clone this project. you can set up the tables with psql utility and the sql scripts in /scriptsSQL folder :
+
     git clone https://github.com/Fredestrik/cresh-tt-back-js.git
     cd cresh-tt-back/scriptsSQL
     psql -d cresh-tt-back -f customers.sql
@@ -31,10 +33,12 @@ Once the **cresh-tt-back** database is created, clone this project. you can set 
     psql -d cresh-tt-back -f instalments.sql
 
 Now your database is up and running, install the dependencies. Copy .env.example into .env and set your own user and password.
+
     npm install
     cp .env.example .env
 
 Launch the project in development mode with 
+
     npm start
 
 
