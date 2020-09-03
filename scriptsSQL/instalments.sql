@@ -1,5 +1,5 @@
 CREATE TABLE instalments (
-    id              int primary key,
+    id              serial primary key,
     transaction     integer references transactions,
     amount          integer default 0,
     is_paid         boolean,

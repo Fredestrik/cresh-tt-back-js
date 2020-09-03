@@ -1,5 +1,5 @@
 CREATE TABLE transactions (
-    id              int primary key,
+    id              serial primary key,
     store_name      varchar(50),
     customer        integer references customers,
     amount          integer default 0,

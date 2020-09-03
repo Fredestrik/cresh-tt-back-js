@@ -1,5 +1,5 @@
 CREATE TABLE customers (
-    id              int primary key,
+    id              serial primary key,
     name            varchar(255),
     created_date    date
 );
