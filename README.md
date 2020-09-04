@@ -24,7 +24,7 @@ with the createdb utility :
 
     createdb cresh-tt-back
 
-Once the **cresh-tt-back** database is created, clone this project. you can set up the tables with psql utility and the sql scripts in /scriptsSQL folder :
+Once the **cresh-tt-back** database is created, clone this project. You can set up the tables with psql utility and the sql scripts in /scriptsSQL folder :
 
     git clone https://github.com/Fredestrik/cresh-tt-back-js.git
     cd cresh-tt-back/scriptsSQL
@@ -32,14 +32,18 @@ Once the **cresh-tt-back** database is created, clone this project. you can set 
     psql -d cresh-tt-back -f transactions.sql
     psql -d cresh-tt-back -f instalments.sql
 
-Now your database is up and running, install the dependencies. Copy .env.example into .env and set your own user and password.
+Now your database is up and running, install the dependencies. Copy .env.example into .env
 
     npm install
     cp .env.example .env
 
+Set your own user and password in the .env file
+
 Launch the project in development mode with 
 
+    npm run dev
+
+Launch the project in production mode
+
+    npm run build
     npm start
-
-
-Clone this repository.
